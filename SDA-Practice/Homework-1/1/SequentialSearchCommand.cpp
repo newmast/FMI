@@ -14,7 +14,7 @@ void SequentialSearchCommand::execute() {
 
   Student *student = db->find(facultyNumber);
   if (student == NULL) {
-    std::cerr << "No records available" << std::endl;
+    std::cerr << "Record not found!" << std::endl;
     return;
   }
 
