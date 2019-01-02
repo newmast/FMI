@@ -78,11 +78,13 @@ Node* BinarySearchTree::remove(Node* node, long long value) {
 void BinarySearchTree::traverse(Node *node) {
   if (node->left != NULL) {
     traverse(node->left);
+    std::cout << ", ";
   }
 
   std::cout << node->student.fn << " ";
 
   if (node->right != NULL) {
+    std::cout << ", ";
     traverse(node->right);
   }
 
